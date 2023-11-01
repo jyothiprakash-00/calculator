@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.cal-container {
+  height: calc(100vh - 15vh);
+  width: 85vw;
+  margin-left: 550px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cal-container h2 {
+  align-self: center;
+  letter-spacing: 5px;
+  font-size: 3em;
+  margin-top: 20px;
+  color: rgb(139, 235, 143);
+  text-shadow: 2px 2px 5px #0eed3b;
+}
+
+.calculator {
+  align-self: center;
+  margin-left: 50px;
+ 
+}
+
+.calculator > div {
+  width: 30em;
+  padding: 1em;
+  height: 70vh;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  background: linear-gradient(140deg, #0bec6ddb, #eee8e8);
+  box-shadow: 4px 4px 10px #88d75d, -4px -4px 10px #fff;
+}
+
+.display {
+  width: 400px;
+  display: flex;
+  height: 15vh;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 700;
+  color: #86ec8e;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  justify-content: flex-end;
+  background-color: #edeeed;
+  text-shadow: 1px 1px 2px #000;
+  box-shadow: inset 4px 4px 4px #c1c1c1, -4px -4px 4px #ddd;
+}
+
+.display > p {
+  border-radius: 10px;
+}
+
+.keys {
+  width: 100%;
+  height: 100%;
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  border: #c1c1c1;
+  border-radius: 10px;
+  background: #eeeeeea8;
+  box-shadow: 4px 4px 10px #c1c1c1;
+  width: calc(25% - 1em);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #89d07d;
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+.btn:nth-child(17) {
+  width: calc(50% - 1em);
+}
+
+.btn:nth-child(4),
+.btn:nth-child(8),
+.btn:nth-child(12),
+.btn:nth-child(16),
+.btn:nth-child(19) {
+  background-color: #71f082;
+}
+
+.btn:nth-child(4):hover,
+.btn:nth-child(8):hover,
+.btn:nth-child(12):hover,
+.btn:nth-child(16):hover,
+.btn:nth-child(19):hover {
+  background-color: #010501;
+  color: #a5d51f;
 }
